@@ -1,5 +1,5 @@
 function containSubString(str, subString){
-    
+
     // str.indexOf(subString) tries to find where subString starts inside str.
     // If found → it returns the position (index number, like 0, 5, 10...).
     // If not found → it returns -1
@@ -29,3 +29,12 @@ console.log(containSubString("Hello I am JavaScript","Java"));
 // If it gives any number (0, 1, 2, …) → substring exists, so return true.
 
 // 👉 That’s why we compare with -1. It’s the special “not found” signal.
+
+
+function containAnotherString(str1, str2){
+    let str = str1.toLowerCase();
+    let subStr = str2.toLowerCase();
+    containsWord = str.indexOf(subStr) !== -1;
+    return containsWord;
+}
+console.log(containAnotherString("Javascript object Notation", "noT"));
