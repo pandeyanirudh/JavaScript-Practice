@@ -6,3 +6,7 @@ function capitalize(sentence){
     return word.join(' ');
 }
 console.log(capitalize("hello i am javascript"));
+
+// The slice() method returns selected elements in a new array.
+
+//array.slice(start, end)
